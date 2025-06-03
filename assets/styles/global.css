@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url('../img/wheel.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% + 170px) center;
+  background-size: 520px;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.header {
+  background: rgba(23, 175, 255, 0.55);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 6px 32px 0 rgba(50, 140, 255, 0.14),
+    0 1.5px 4px rgba(0, 0, 0, 0.05);
+  margin: auto;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+#logo {
+  height: 102px;
+  min-width: 102px;
+  max-width: 90px;
+  transition: transform 0.22s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.logo-text {
+  font-family: 'Anton', 'Roboto', Arial, sans-serif;
+  font-size: 2.9rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #002b5c;
+  text-shadow: 0 2px 12px rgba(0, 43, 92, 0.09),
+    0 1.5px 4px rgba(23, 175, 255, 0.12);
+  margin-left: 1rem;
+  transition: color 0.18s cubic-bezier(0.4, 2, 0.6, 1);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.custom-btn {
+  background-color: #17afff;
+  color: #fff;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: #0f94db;
+  color: #fff;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #17afff;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
